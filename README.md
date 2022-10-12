@@ -3,6 +3,9 @@ RPI Pico KITT Scanner using LEDs. Celebrating Knight Rider's 40th Birthday.
 
 This is the source code to a video blog looking at different approaches to multi-tasking on the Raspberry PI Pico or RP2040 in C++. Repo contains three projects.
 
+[Video blog](https://drjonea.co.uk/2022/10/12/rpi-pico-kitt-scanner/)
+
+
 ## KITT Simple
 Simple KITT Scanner display. 8 LED moving left to right as they did on the front of KITT.
 
