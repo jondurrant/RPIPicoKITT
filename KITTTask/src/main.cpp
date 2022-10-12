@@ -1,5 +1,6 @@
 /***
  * Demo program to flash an LED attached to GPIO PAD 0.
+ * Display KITT Scanner on GPIO Pad 2 to 9
  * Uses FreeRTOS Task
  * Jon Durrant
  * 15-Aug-2022

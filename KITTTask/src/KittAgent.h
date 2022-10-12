@@ -18,6 +18,11 @@
 
 class KittAgent: public Agent  {
 public:
+	/***
+	 * Constructor
+	 * @param gpFirst - GPIO Pad of the first LED
+	 * @param gpLast  - GPIO Pad of the last LED
+	 */
 	KittAgent(uint8_t gpFirst=2, uint8_t gpLast=9);
 	virtual ~KittAgent();
 

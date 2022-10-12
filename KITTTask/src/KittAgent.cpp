@@ -8,9 +8,12 @@
 #include "KittAgent.h"
 #include <stdio.h>
 
-//Blink Delay
-#define DELAY			500
 
+/***
+ * Constructor
+ * @param gpFirst - GPIO Pad of the first LED
+ * @param gpLast  - GPIO Pad of the last LED
+ */
 KittAgent::KittAgent(uint8_t gpFirst, uint8_t gpLast) {
 	xLedFirst = gpFirst;
 	xLedLast = gpLast;
@@ -21,7 +24,9 @@ KittAgent::~KittAgent() {
 }
 
 
-
+/***
+ * Run loop for the agent.
+ */
 void KittAgent::run(){
 	uint i = 0;
 

@@ -9,7 +9,10 @@
 #include "pico/time.h"
 
 
-
+/***
+ * Constructor
+ * @param gp - GPIO Pad number that LED is connected to
+ */
 Blink::Blink(uint8_t gp) {
 	xLed = gp;
 	gpio_init(xLed);
@@ -23,6 +26,9 @@ Blink::~Blink() {
 	// NOP
 }
 
+/***
+ * Poll, call repeatably to get blink to occur
+ */
 void Blink::poll(){
 	int32_t now = to_ms_since_boot (get_absolute_time ());
 

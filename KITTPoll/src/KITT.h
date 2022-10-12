@@ -16,12 +16,23 @@
 
 class KITT {
 public:
+	/***
+	 * Constructor
+	 * Assumes use of consecutive GPIO PADs
+	 * @param firstGp - GPIO Pad number for the first pad used for LEDs
+	 * @param lastGp - GPIO Pad number for the last pad used for LEDs
+	 */
 	KITT(uint8_t firstGp=2, uint8_t lastGp=9);
 	virtual ~KITT();
 
+	/***
+	 * Poll the animation
+	 * Do a step if needed
+	 */
 	void poll();
 
 private:
+	// GPIO Pad numbers
 	uint8_t xFirstLed;
 	uint8_t xLastLed;
 
